@@ -27,11 +27,11 @@ function validateSignup() {
   }
   if (
     !document.signupform.password1.value.match(
-      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,10}$/
+      /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/
     )
   ) {
     document.getElementById("opt").innerHTML =
-      "Password must contain minimum eight and maximum 10 characters, at least one uppercase letter, one lowercase letter, one number and one special character";
+      "Minimum eight characters, at least one letter, one number and one special character:";
     return false;
   }
 

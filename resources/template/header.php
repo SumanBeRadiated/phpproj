@@ -1,5 +1,9 @@
-<header>
-    
+<header class="container flex">
+    <div class="header-logo">
+        <a href="/mp/NewsApp/public_html/index.php">
+        <h1>Infinity News</h1>
+        </a>
+    </div>
     <?php 
         include '../resources/template/nav.php'; 
         if(isset($_POST["logout"])) {
@@ -11,24 +15,32 @@
 
         <?php if(isset($_COOKIE["cur_user"])) { ?>
 
-        <ul>
+        <ul class="user-nav flex">
             <li>
                 <a href="/mp/NewsApp/public_html/profile.php"><?php echo $_COOKIE["cur_user_uname"]; ?></a>
             </li>
             <li>
+                <a href="/mp/NewsApp/public_html/readlater.php">Read Later</a>
+            </li>
+            <li>
                 <form method="POST">
-                    <input type="submit" value="Logout" name="logout" />
+                    <input type="submit" value="Logout" name="logout" class="btn-sec "/>
                 </form>
             </li>
         </ul>
 
         <?php } else { ?>
-            <ul>
-                <li><a href="login.php">Login</a></li>
-                <li><a href="signup.php">Signup</a></li>
+            <ul class="user-nav flex ">
+                <li><a href="signup.php" class="btn-pri">Signup</a></li>
+                <li><a href="login.php" class="btn-sec">Login</a></li>
             </ul>
 
         <?php } ?>
 
+    
+
 
 </header>
+<div class="container headerdis">
+    <hr>
+    </div>

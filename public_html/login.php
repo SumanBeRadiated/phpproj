@@ -41,19 +41,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+         <?php include '../resources/template/head.php'; ?>
+    <title>Login | Infinity News</title>
 </head>
 <body>
 
     <?php include '../resources/template/header.php'; ?>
-    <form name="loginform" method="POST" onsubmit="return validateLogin()">
-        <label>Email</label>
-        <input type="email" name="email"> <br>
-        <label>Password</label>  
-        <input type="password" name="password1"> <br>
-        <input type="submit" name="submit" value="Submit">
+     <div class="form-sl container">
+         <h2>Login</h2>
+    <form name="loginform" method="POST" onsubmit="return validateLogin()" class="flex">
+        <label>Email
+        <input type="email" name="email">
+        </label>
+        <label>Password
+        <input type="password" name="password1">
+        </label> 
+        <input type="submit" name="submit" value="Submit" class="btn-pri">
     </form>
     <div id="opt"></div>
+</div>
     <?php echo $err_msg ?>
     <?php include '../resources/template/footer.php'; ?>
     <!-- <script>

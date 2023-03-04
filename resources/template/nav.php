@@ -1,3 +1,3 @@
 <nav>
-    <ul><li><a href="">Home</a></li><li><a href="#">Latest</a></li><li><a href="#">About</a></li></ul>
+    <ul class="flex"><li><a href="/mp/NewsApp/public_html/index.php">Home</a></li><li><a href="/mp/NewsApp/public_html/latest.php">Latest</a></li><li><a href="/mp/NewsApp/public_html/about.php">About</a></li></ul>
 </nav>

@@ -1,0 +1,320 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 1000px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+hr {
+  margin: 1em 0;
+}
+
+header {
+  justify-content: space-between;
+  padding: 2.5em 0 1.5em 0;
+  align-items: center;
+}
+
+.headerdis {
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+header nav ul {
+  list-style: none;
+  gap: 4em;
+}
+
+.user-nav {
+  list-style: none;
+  gap: 1em;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+footer ul {
+  margin-top: 0.5em;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.btn-pri {
+  background-color: black;
+  color: white;
+  border-radius: 7px;
+  padding: 0.75em 1.25em;
+  cursor: pointer;
+  transition: all 0.1s;
+  border: 2px solid #000;
+}
+.btn-pri:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+.btn-sec {
+  border: 2px solid #000;
+  color: black;
+  border-radius: 7px;
+  padding: 0.75em 1.25em;
+  cursor: pointer;
+  background-color: #fff;
+  transition: all 0.1s;
+}
+
+.btn-sec:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+
+.ls-news {
+  flex-direction: row;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 3em;
+  padding: 0;
+  margin-top: 2em;
+}
+
+.ls-news li {
+  width: 450px;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.th-art-date {
+  color: rgb(119, 119, 119);
+  font-size: 0.85rem;
+}
+
+.ls-news a {
+  text-decoration: none;
+  color: black;
+}
+
+.ls-news h3:hover {
+  color: rgb(29, 29, 29);
+}
+
+.ls-news hr {
+  margin: 0;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 4em 0;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer a {
+  color: white;
+}
+
+.footer-wrap {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-end {
+  text-align: center;
+  margin-top: 2em;
+}
+
+article {
+  flex-direction: column;
+}
+
+.article-title {
+  justify-content: space-between;
+  gap: 5em;
+  margin-bottom: 1em;
+}
+.article-title > div {
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 0.75em;
+}
+
+.article-title input {
+  font-family: Montser;
+  background-color: white;
+  border: 0;
+  cursor: pointer;
+  border-bottom: 1px solid #000;
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+}
+
+.art-date {
+  align-self: flex-end;
+}
+
+.article-title h2 {
+  width: 75%;
+}
+
+.art-body {
+  width: 60%;
+  margin: 1em 0;
+}
+
+.auth-det {
+  text-decoration: underline;
+}
+
+.art-body p {
+  text-indent: 25px;
+  margin-bottom: 1em;
+  letter-spacing: 0.25px;
+  line-height: 1.5em;
+}
+
+.form-sl {
+  width: 600px;
+}
+
+.form-sl label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  font-size: 1.15rem;
+}
+
+.form-sl form {
+  margin: 1em 0;
+  gap: 1em;
+  flex-direction: column;
+}
+
+.form-sl input {
+  font-size: 1.5rem;
+  border-radius: 4px;
+  border-width: 1px;
+  padding: 0.25em;
+}
+
+.form-sl input[type="submit"] {
+  cursor: pointer;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.comm-section textarea {
+  resize: none;
+  width: 600px;
+  height: 100px;
+}
+
+.comm-section {
+  gap: 0.5em;
+  flex-direction: column;
+}
+
+.input-comment {
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.comment-list {
+  list-style: none;
+  padding: 0;
+  width: 600px;
+  gap: 1em;
+  flex-direction: column-reverse;
+}
+
+.comment-list li {
+  border: 1px solid black;
+  flex-direction: column;
+  gap: 0.5em;
+  border-radius: 5px;
+  padding: 0.75em 1em;
+}
+
+.comment-date {
+  font-size: 0.8rem;
+  color: rgb(70, 70, 70);
+}
+
+.commenter-name {
+  font-weight: 600;
+}
+
+.comm-section {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.user-detail table th {
+  text-align: left;
+}
+
+.user-detail th,
+.user-detail td {
+  padding-right: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.user-detail {
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+
+.user-nav {
+  align-items: center;
+}
+
+.about {
+  flex-direction: column;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+
+.about p {
+  /* margin-bottom: 1em; */
+  width: 60%;
+}
+
+.latest-section {
+  margin-bottom: 2em;
+}
+
+.readl-list {
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  width: 75%;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  gap: 1.25em;
+}
+
+.readl-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.readl-list a {
+  color: black;
+  text-decoration: none;
+}
