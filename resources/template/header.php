@@ -17,7 +17,7 @@
 
         <ul class="user-nav flex">
             <li>
-                <a href="/mp/NewsApp/public_html/profile.php"><?php echo $_COOKIE["cur_user_uname"]; ?></a>
+                <a href="/mp/NewsApp/public_html/profile.php"><b><?php echo $_COOKIE["cur_user_uname"]; ?></b></a>
             </li>
             <li>
                 <a href="/mp/NewsApp/public_html/readlater.php">Read Later</a>
@@ -37,7 +37,7 @@
 
         <?php } ?>
 
-    
+        
 
 
 </header>

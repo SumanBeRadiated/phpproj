@@ -167,7 +167,7 @@ article {
   align-self: flex-end;
 }
 
-.article-title h2 {
+.article-title h1 {
   width: 75%;
 }
 
@@ -317,4 +317,31 @@ article {
 .readl-list a {
   color: black;
   text-decoration: none;
+}
+
+@media screen and (max-width: 391px) {
+  header nav {
+    display: none;
+  }
+  .user-nav {
+    display: none;
+  }
+  .article-title {
+    flex-direction: column;
+    gap: 1em;
+  }
+  .article-title > div {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .art-body {
+    width: 100%;
+  }
+
+  .comm-section textarea {
+    width: 100%;
+  }
+  .comment-list {
+    width: 100%;
+  }
 }
